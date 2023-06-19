@@ -1,0 +1,337 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    outline: 0!important;
+    outline-width: 0!important;
+    outline: 0!important; 
+    outline-width: 0!important;
+    outline: none!important;
+    border-color: inherit;
+}
+
+/* font */
+
+
+
+/* Header */
+
+html, body{
+	width:100%;
+	max-width:100%;
+}
+body{
+	width: calc(100% - 40px);
+	padding-left: 20px;
+	padding-right: 20px;
+	background: #fff;
+	overflow-x: hidden;
+}
+header{
+	float:none;
+	margin-left:auto;
+	margin-right:auto;
+	width:100%;
+	max-width: 414px;
+	padding-top:32px;
+}
+.header-logo{
+	width:100%;
+	text-align:center;
+}
+
+/* Form */
+
+div.main{
+	float:none;
+	margin-left:auto;
+	margin-right:auto;
+	width:100%;
+	max-width: 414px;
+	padding-top: 15px;
+}
+div.main h1{
+	font-family: 'Open Sans';
+    font-style: normal;
+  	font-weight: 700;
+  	color:#002E5F;
+  	font-size: 32px;
+  	line-height: 24px;
+  	padding-bottom:10px;
+}
+div.main .login{
+	display: block;
+	width:100%;
+}
+div.main .login .error-msg{
+	display: none;
+	color: #F83E5A;
+	font-family: 'Open Sans';
+    font-style: normal;
+  	font-weight: 400;
+  	font-size:13px;
+  	line-height: 22px;
+  	position:absolute;
+  	transition: display 0.3s ease-in-out;
+}
+div.main .login.error .error-msg{
+	display: block;
+}
+div.main .login div{
+	margin-top:42px;
+	position:relative;
+	width:100%;
+	display: inline-flex;
+}
+div.main .login div input[type="text"] + label,
+div.main .login div input[type="password"] + label{
+	font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color:#002E5F;
+    position:absolute;
+    background: #fff;
+    width:auto;
+    left:18px;
+    top:18px;
+    padding-left:5px;
+    padding-right: 5px;
+    transition: top 0.3s ease-in-out;
+    pointer-events: none;
+}
+div.main .login div input[type="text"]:focus + label,
+div.main .login div input[type="password"]:focus + label,
+div.main .login div input[type="text"] + label.filled,
+div.main .login div input[type="password"] + label.filled{
+	font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color:#002E5F;
+    position:absolute;
+    background: #fff;
+    width:auto;
+    left:18px;
+    top:-6px;
+    pointer-events: none;
+}
+div.main .login div input[type="text"],
+div.main .login div input[type="password"]{
+	width:100%;
+	border: 2px solid #002E5F;
+	border-radius: 8px;
+	padding-left:22px;
+	padding-right:22px;
+	padding-top:0;
+	padding-bottom:0;
+	font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 51px;
+    color:#002E5F;
+    transition: border 0.3s linear;
+}
+div.main .login div.warning input[type="text"],
+div.main .login div.warning input[type="password"]{
+	border: 2px solid #F83E5A;
+}
+div.main .login div + .warning-msg{
+	display: none;
+	color: #F83E5A;
+	font-family: 'Open Sans';
+    font-style: normal;
+  	font-weight: 400;
+  	font-size:13px;
+  	line-height: 22px;
+  	position:absolute;
+  	transition: display 0.3s ease-in-out;
+}
+div.main .login div.warning + .warning-msg{
+	display: flex; 
+	width:100%;
+}
+div.main .login input[type=checkbox]{
+	width: 24px;
+	height:24px;
+	border-radius: 6px!important;
+	overflow: hidden;
+	margin:0;
+	margin-right:6px;
+	display: inline-block;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	border: 1px solid #002E5F;
+	transition: background 0.3s ease-in-out;
+}
+div.main .login input[type=checkbox]:checked{
+	background: #002E5F no-repeat center;
+}
+div.main .login input[type=checkbox] + label{
+	width:auto;
+	font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color:#002E5F;
+    line-height:24px;
+    position:relative;
+}
+.fa{
+	transition: background 0.3s ease-in-out;
+}
+.fa-eye{
+	background: transparent  no-repeat center;
+	position: absolute; 
+	top:15px;
+	right: 22px;
+	width: 32px;
+	height: 24px;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	border: none;
+}
+.fa-eye-slash{
+	background: transparent  no-repeat center;
+	position: absolute; 
+	top:15px;
+	right: 22px;
+	width: 32px;
+	height: 24px;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	border: none;
+}
+.btn-enter{
+	width:100%;
+	background: #002E5F;
+	border-radius: 8px;
+	height: 48px;
+	border: none;
+	display: block;
+	margin-top:32px;
+	color:#fff;
+	font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+}
+.btn-enter.spid{
+	width:100%;
+	background: #1466cc;
+	border-radius: 8px;
+	height: 48px;
+	border: none;
+	display: block;
+	margin-top:32px;
+	color:#fff;
+	font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+}
+.recovery-password{
+	color: #002E5F;
+	font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    width:100%;
+    text-align: center;
+    margin-top:30px;
+    display: block;
+    text-decoration: none;
+}
+.more-info{
+	color: #000;
+	font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    width:100%;
+    text-align: center;
+    margin-top:30px;
+    display: block;
+    margin-bottom: 30px;
+}
+.oppure{
+	width:100%;
+	position: relative;
+	margin-top: 5px!important;
+	display: block!important;
+}
+.oppure:after{
+	content:"";
+	width:100%;
+	height:1px;
+	background: #002E5F;
+	display: block;
+}
+.oppure span{
+	display: block;
+	padding:5px;
+	background: #fff;
+	float:none;
+	margin: auto;
+	width:100px;
+	position: relative;
+	text-align: center;
+	top:22px;
+	font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom:10px;
+}
+.spid-login{
+	margin-top: 0!important;
+	display: block!important;
+}
+
